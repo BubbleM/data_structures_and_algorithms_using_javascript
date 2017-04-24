@@ -103,6 +103,7 @@ function getElement(){
    return this.dataStore[this.pos];
 }
 // var movies = read('./films.txt').split("\n");
+// print(movies);
 var movies = createArr("films.txt");
 //当读进来的内容被分割成数组后，换行符被替换成空格。
 function createArr(file){

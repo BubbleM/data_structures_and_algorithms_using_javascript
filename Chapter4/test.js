@@ -111,3 +111,26 @@ function isPalindrome(word){
 // else {
 // 	print(word + " is not a palindrome.");
 // }
+
+//阶乘函数的递归定义
+function factorial(n){
+	if(n===0){
+		return 1;
+	}else{
+		return n * factorial(n-1);
+	}
+}
+// print(factorial(5));//120
+//使用栈模拟递归
+function fact(n){
+	var s = new Stack();
+	while(n>1){
+		s.push(n--);
+	}
+	var product = 1;
+	while(s.length()>0){
+		product *= s.pop();
+	}
+	return product;
+}
+print(fact(5));//120
