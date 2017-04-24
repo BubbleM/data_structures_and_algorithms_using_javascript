@@ -19,10 +19,18 @@ function remove(item) {
    }
 }
 
-function findPrevious(item) {
+// function findPrevious(item) {
+//    var currNode = this.head;
+//    while (!(currNode.next == null) && 
+//            (currNode.next.element != item)) {
+//       currNode = currNode.next;
+//    }
+//    return currNode;
+// }
+
+function findPrevious(item){
    var currNode = this.head;
-   while (!(currNode.next == null) && 
-           (currNode.next.element != item)) {
+   while( (currNode.next != null) && (currNode.next.element != item) ){
       currNode = currNode.next;
    }
    return currNode;
